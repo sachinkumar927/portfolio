@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;    
+    font-family: 'Poppins',sans-serif;
+}
+
+:root{
+    --bg-color: #262626;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color:var(--bg-color) ;
+    color: car(--text-color);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+}
+.payment{
+    background: #131416;
+}
+.payment-left{
+    flex-basis: 35%;
+}
+
+.payment-right{
+    flex-basis: 65%;
+}
+
+.payment-left p{
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.payment-left a{
+    color: #37f7ed;
+    font-size: 1.2rem;
+}
+
+.payment-right form h2{
+    color: #6e6e6e;
+    font-size: 1.8rem;
+    float: left;
+    padding: 30px 1em 0px 8px;
+}
+.payment-right form label{
+    color: #6e6e6e;
+    font-size: 1.8rem;
+    float: left;
+    padding: 30px 1em 0px 8px;
+}
+.payment-right form{
+    width: 100%;
+}
+form input{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin:15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.payment-mode {
+    float: left;
+    clear: none;
+  }
+  
+.payment-mode label{
+    float:left;
+    clear: none;
+    display: block;
+    padding: 30px 1em 0px 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 5px;
+  }
+  
+  input[type=radio],
+  input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 2px 2px 2px;
+  }
+
+.btn.btn3{
+    margin-top: 40px;
+    margin-left: 40%;
+
+}
+#show-image-button {
+    background: transparent;
+    color: #0ef;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#image-container {
+    display: none; 
+    margin-top: 20px;
+}
+
+#displayed-image {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.payment-mode .active{
+    background: green;
+}
+
+#flashmsg{
+    color: rgb(41, 247, 14);
+    font-weight: 400;
+    font-size: 2rem;
+    box-shadow: 0 0 1.2rem rgb(8, 248, 60);
+    display: none;
+}
+
+/* -----For mobile view----- */
+
+@media (max-width: 768px) {
+   
+.row {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+}
+.payment-left p {
+    margin-top: 1rem; 
+    font-size: 1.4rem;
+}
+
+.payment-right form h2,
+.payment-right form label {
+    color: #6e6e6e;
+    font-size: 1.6rem; 
+    float: none; 
+    padding: 1rem 0; 
+}
+
+form input,
+.payment-mode label,
+input[type=radio],
+input.radio {
+    width: 100%;
+    background: #262626;
+    padding: 1rem; 
+    margin: 1rem 0;
+    font-size: 1.6rem; 
+    border-radius: 6px;
+}
+
+.payment-mode {
+    float: none; 
+    clear: both; 
+    margin: 1rem 0;
+}
+
+.btn.btn3 {
+    margin-top: 2rem; 
+    margin-left: auto; 
+    margin-right: auto;
+    display: block;
+}
+
+#show-image-button {
+    background: transparent;
+    font-size: 1.6rem; 
+    margin-top: 2rem; 
+}
+
+}
+

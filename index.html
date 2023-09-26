@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portfolio</title>
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script src="https://kit.fontawesome.com/4d8de72970.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ----Header design---- -->
+    <header class="header">
+        <a href="#" class="logo"><span>PORT</span>FOLIO.</a>
+        
+        <nav class="navbar">
+            <i class="fas fa-bars" onclick="openMenu()"></i>
+            <ul id="sidemenu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- home section design -->
+     <section class="home" id="home">
+        <div class="home-img-mobile">
+            <img src="mainDP.png" alt="">
+        </div>
+        <div class="home-content">
+            <br><br><h3>Hello, It's me</h3>
+            <h1>Sachin Kumar</h1>
+            <h3>And I'm a <span>Developer</span> </h3>
+            <p>A highly motivated and enthusiastic fresher with a solid background in technology,
+                a love towards coding, a knack for solving problems, and a great interest in innovation.
+            </p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/sachhu.sachhi.3" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.youtube.com/@TechWithSachinnu" target="_blank"><i class='bx bxl-youtube'></i></a>
+                <a href="https://twitter.com/im_sachinnu" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/im.sachinnu" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/sachinkumar927" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="Sachin_Kumar_Resume.pdf" download="Sachin_Kumar_Resume" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="mainDP.png" alt="">
+        </div>
+     </section>
+
+     
+     <!-- ------About section Design---- -->
+     <section class="about" id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="DP.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About <span>Me</span></h1>
+                <p style="text-align: justify;">I'm a nice fun and friendly person, I'm honest and punctual, I work well in a team but also
+                     on my own as I like to set myself goals which I will achieve, I have good listening and communication skills. 
+                     I have a creative mind and am always up for new challenges and I'm a allrounder.
+                    </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Frontend Development</span><br>Design Responsive Web/App Interfaces</li>
+                        <li><span>Backend Development</span><br>Implement Server-Side Applications</li>
+                        <li><span>Programming Languages</span><br>Python  •  C • JavaScript • C++ •Java<br><span></span></li>
+                        <li><span>Databases</span><br>MySQL • MongoDB</li>
+                        <li><span>Web</span><br>HTML • CSS</li>
+                        <li><span>Other</span><br>NodeJS • DataStructure and Algorithms • Kali Linux • Digital System Design • Logic Design  • PCB Design</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Internship - Gauravgo Games Technologies, Ranchi</span><p>September 2023 - September 2023</p><br>Contributed to design, implementation and host of Portfolio Website.
+                            <br>Enhanced frontend development and web designing skills </li>
+                        <li><span>Intern - Robosoft Technologies, Udupi</span><p>March 2023 - April 2023</p><br>Contributed to design and implementation of server-side components and APIs.
+                           <br>Enhanced Java programming and backend development skills</li>
+                        <li><span>Internship - QSpider-Campus Connect</span><p>August 2022 - September 2022</p><br>Gained hands-on experience in C, Data Structures and Algorithms, Java, and SQL.
+                           <br>Actively participated in coding exercises and projects.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor's of Engineering - Electronics and Communication </span><p>2019 - 2023</p><br>Canara Engineering College, Mangalore</li>
+                        <li><span>PUC - PCMS</span><p>2017 - 2019</p><br>PRN Amratha bharathi PU College, Hebri</li>
+                        <li><span>SSLC</span><p>2016 - 2017</p><br>Govt Junior College, Hebri</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+     <!-- Service section design -->
+   
+    <section class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My <span>Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> I'm passionate about crafting exceptional web experiences. 
+                        Our creative web design services prioritize user-centricity, 
+                        responsive design, and modern aesthetics.
+                        We tailor custom solutions that align with your unique goals. 
+                        Beyond aesthetics, we optimize for search engines and drive conversions.</p>
+                    <a href="#">learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Embedded System Development</h2>
+                    <p>Passionate about the exciting field of embedded systems development. 
+                        Our passion lies in creating innovative solutions that seamlessly 
+                        blend hardware and software to tackle real-world challenges. 
+                        We excel in turning ideas into impactful reality.</p>
+                    <a href="#">learn More</a>
+                </div>
+            
+                <div>
+                    <i class="fa-solid fa-user"></i><i class="fa-solid fa-server"></i>
+                    <h2>Frontend /Backend Development</h2>
+                    <p> Developer specializing in frontend and backend development. I craft seamless,
+                        user-friendly digital experiences, using modern frameworks.
+                        My backend expertise encompasses Flask, ensuring robust server-side functionality, 
+                        database management, and API creation.</p>
+                    <a href="#">learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-network-wired"></i>                   
+                    <h2>PCB Design</h2>
+                    <p>Specializing in cutting-edge PCB design. With extensive experience, I create precise, 
+                       performance-driven PCB layouts for diverse applications.
+                       Whether it's a prototype or a production solution, I'm dedicated to transforming your 
+                       ideas into tangible, market-ready PCB designs. </p>
+                    <a href="#">learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service section design -->
+
+    <!-- Project section design -->
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Latest <span>Projects</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="DP.png">
+                    <div class="layer">
+                        <h3>Get It Checked</h3>
+                        <p>Designed user interface and integrated with backend for plagiarism detection.
+                            It automatically assigns grades to the assignments based on the answer key and It has a marks predictor feature</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="DP.png">
+                    <div class="layer">
+                        <h3>Chemical Free Mosquito Repellent</h3>
+                        <p>Developed this project to persuade people to use mosquito 
+                            repellent To prevent from mosquito bites and diseases
+                            spread by mosquitoes. Ultrasonic sound mode is used to ward 
+                            off insects while UV MR hybrid mode is utilized to kill mosquitoes.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="DP.png">
+                    <div class="layer">
+                        <h3>KeyLogger</h3>
+                        <p> With a focus on understanding and mitigating security vulnerabilities, 
+                            this endeavor delved into the creation and ethical use of a keylogging application.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- ----see more----------- hidden for mobile and 6 visible for desktop-->
+                <div class="work hidden mobile">
+                    <img src="DP.png">
+                    <div class="layer">
+                        <h3>Chatbot for Restaurants</h3>
+                        <p>It is a cutting-edge technology that enhances user experiences and automates business procedures.
+                            Created to help customers in a variety of ways, such as making bookings, suggesting dishes,
+                            and responding to frequently asked inquiries.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden mobile">
+                    <img src="DP.png">
+                    <div class="layer">
+                        <h3>Online Movie Ticket Booking System</h3>
+                        <p>This project revolutionizes the way moviegoers reserve 
+                            and purchase tickets, providing a user-friendly platform for hassle-free movie experiences 
+                            and reduced manual work by 75%</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden mobile">
+                    <img src="DP.png">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>A portfolio is an invaluable asset for professionals and creatives alike. It serves 
+                            as a comprehensive visual narrative of one's journey, encapsulating a diverse range 
+                            of projects and accomplishments.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                
+                <div class="work hidden">
+                    <img src="DP.png">
+                    <div class="layer">
+                        <h3>Smart Dustbin</h3>
+                        <p> This project is designed to automatically open the lid when someone approaches
+                            the trash can so that they can dispose of their waste.  
+                            The buzzer warns the user when the waste reaches a specific level. </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work hidden">
+                    <img src="DP.png">
+                    <div class="layer">
+                        <h3>Gaming Adda</h3>
+                        <p>Gaming Adda represents a captivating virtual playground where entertainment
+                            meets innovation.  I've created a collection of six interactive games,
+                            each of which showcases my love of game creation and programming skills.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="seemore">See More</div>
+        </div>
+    </section>
+    
+   
+    <!-- Contact section deisgn -->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>Me</span></h1>
+                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:sachinhebri927@gmail.com">sachinhebri927@gmail.com</a></p>
+                    <p><i class="fas fa-phone-square"></i>+91 8971465814</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Hebri, Udupi , Karnataka - 576112</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/sachhu.sachhi.3" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.youtube.com/@TechWithSachinnu" target="_blank"><i class='bx bxl-youtube'></i></a>
+                        <a href="https://twitter.com/im_sachinnu" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/im.sachinnu" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="https://www.linkedin.com/in/sachinkumar927" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <div class="btn">
+                        <a href="payment.html" style="color: black;">Pay Me</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="sendMail(); reset(); return false;" id="contact-form">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email Address" required>
+                        <input type="tel" id="phone" placeholder="Your Contact Number">
+                        <textarea id="message" cols="30" rows="6" placeholder="Your Message" required></textarea>
+                        <span class="flashmsg1"></span>
+                        <span class="flashmsg2"></span>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- ----- scripts ----- -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
