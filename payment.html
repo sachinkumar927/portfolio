@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="payment.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/4d8de72970.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="payment default-color-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 payment-left mt-5">
+                    <h1 class="sub-title">Pay <span class="default-color-main">Me</span></h1>
+                    <p><span class="default-color-main">UPI ID: </span> sachinhebri927@okaxis </p>
+                    <button id="show-image-button" class="btn btn2 mb-3" style="width: 70%;">Click here for QR
+                        Code</button>
+                    <!-- <i class="fas fa-times " id="closebtn"></i> -->
+                    <div id="image-container">
+                        <img id="displayed-image" src="" style="width:70%">
+                    </div>
+                </div>
+                <div class="col-md-6 payment-right mt-5">
+                    <form name="submit-to-google-sheet">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="Name" id="name" class="form-control" placeholder="Enter Your Name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Contact Number</label>
+                            <input type="tel" name="Phone" id="phone" class="form-control"
+                                placeholder="Enter Your Contact Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="transactionId">Transaction ID</label>
+                            <input type="text" name="TransactionID" id="transactionId" class="form-control"
+                                placeholder="Transaction ID" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="transactionDate">Transaction Date</label>
+                            <input type="date" name="TransactionDate" id="transactionDate" class="form-control"
+                                placeholder="Transaction Date" required>
+                        </div>
+                        <h4>Mode of Payment :</h4>
+                        <div class="form-check">
+                            <input type="radio" name="payment-option" value="credit-card" class="form-check-input">
+                            <label class="form-check-label">Credit Card</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="payment-option" value="upi" class="form-check-input">
+                            <label class="form-check-label">UPI</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="payment-option" value="bank-transfer" class="form-check-input">
+                            <label class="form-check-label">Bank Transfer</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="payment-option" value="other" class="form-check-input">
+                            <label class="form-check-label">Other</label>
+                        </div>
+                        <div id="flashmsg" class="alert alert-success" role="alert" style="display: none;">Submitted
+                            Successfully. . .</div>
+                        <div class="row">
+                            <div class="col text-center my-2 mt-1"> <button type="submit" class="btn">Submit</button></div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwKpZzE2Tuojyt-qXCQOy2Wct0G2-eU7j8UmwuL2QD7vDVsKra0G2-JAwXL1W8rD0kOAA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const flashmsg = document.getElementById('flashmsg');
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(message => {
+                    flashmsg.style.display = "inline-block";
+                    setTimeout(function () {
+                        flashmsg.style.display = "none";
+                        form.reset();
+                    }, 3000);
+                })
+        })
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

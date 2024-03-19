@@ -1,0 +1,38 @@
+.btn2 {
+    color: var(--text-color) !important;
+    background-color: transparent !important;
+    border: 2px solid #0ef;
+    ;
+}
+
+.btn2:hover {
+    background-color: #0ef !important;
+}
+
+#flashmsg {
+    font-weight: 400;
+    display: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .sub-title,
+    .payment-left {
+        text-align: center;
+    }
+
+    .btn2:hover {
+        background-color: transparent !important;
+    }
+
+    .btn:hover {
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .payment-right .btn {
+        text-align: center;
+    }
+
+}
