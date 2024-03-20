@@ -14,6 +14,11 @@
     display: none;
 }
 
+.form-group input,
+.form-group textarea {
+    background-color: #1c1c1c !important;
+    color: white;
+}
 
 @media only screen and (max-width: 767px) {
 
