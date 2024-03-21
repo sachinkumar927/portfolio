@@ -16,8 +16,11 @@
 
 .form-group input,
 .form-group textarea {
-    background-color: #1c1c1c !important;
+    background-color: #0c0c0c !important;
     color: white;
+}
+.payment{
+    background-image: linear-gradient(121.4deg, rgb(0, 0, 0) 30.5%, rgb(15, 23, 43) 93.2%);
 }
 
 @media only screen and (max-width: 767px) {

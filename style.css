@@ -121,6 +121,7 @@ body {
 
 .showcase li {
     list-style: none;
+    font-size: 20px;
 }
 
 .showcase {
@@ -131,7 +132,7 @@ body {
 
 .img-skills {
     width: 50px;
-    margin: -20px 10px 10px 10px;
+    margin: 0px 10px 10px 10px;
 }
 
 .img-about {
@@ -256,7 +257,8 @@ body {
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
-    background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgb(30, 29, 54) 93.2%);
+    /* background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgb(30, 29, 54) 93.2%); */
+    background-image: linear-gradient(121.4deg, rgb(0, 0, 0) 30.5%, rgb(15, 23, 43) 93.2%);
     padding: 10px;
 
 }
@@ -264,6 +266,7 @@ body {
 .work .layer p {
     text-align: justify;
     font-size: 14px;
+    font-weight: 400 !important;
 }
 
 .work .layer h3 {
@@ -307,17 +310,16 @@ span,
 
 
 .split-tab {
-    background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgb(30, 29, 54) 93.2%);
+    /* background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgb(30, 29, 54) 93.2%); */
+    background-image: linear-gradient(121.4deg, rgb(0, 0, 0) 30.5%, rgb(15, 23, 43) 93.2%);
+
     width: 100% !important;
     /* border: 5px solid rgb(30, 29, 54); */
 }
 
-.split-tab col {
-    margin: 0 24% 0 24%;
-}
-
 .tab-content ul li {
-    background-image: linear-gradient(10.4deg, rgba(7, 7, 9, 1) 6.5%, rgb(30, 29, 54) 93.2%);
+    /* background-image: linear-gradient(10.4deg, rgba(7, 7, 9, 1) 6.5%, rgb(30, 29, 54) 93.2%); */
+    background-image: linear-gradient(121.4deg, rgb(10, 10, 10) 30.5%, rgb(15, 23, 43) 93.2%);
     border-radius: 2px;
     margin: 10px 0 10px 0;
     padding-left: 10px;
@@ -355,7 +357,7 @@ span,
 
 form input,
 form textarea {
-    background-color: #262626 !important;
+    background-color: #0c0c0c !important;
     color: white;
 }
 .form-control{
@@ -386,8 +388,14 @@ form textarea {
     display: none;
 }
 
+#contact{
+    background-image: linear-gradient(121.4deg, rgb(0, 0, 0) 30.5%, rgb(15, 23, 43) 93.2%);
 
+}
+#about{
+    background-image: linear-gradient(121.4deg, rgb(0, 0, 0) 30.5%, rgb(15, 23, 43) 93.2%);
 
+}
 /* side bar  */
 
 
@@ -557,7 +565,7 @@ form textarea {
     }
 
     .work .layer .wrapper {
-        font-size: .8125rem;
+        font-size: 16px;
     }
 
     /* sidebar */
@@ -597,7 +605,8 @@ form textarea {
 
     .home {
         height: 100vh;
-        background-image: url('backgroundMobile.png');
+        background-image: url('backgroundMobile.png') !important;
+        /* background-image: linear-gradient(121.4deg, rgb(0, 0, 0) 30.5%, rgb(15, 23, 43) 93.2%); */
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -618,4 +627,12 @@ form textarea {
         margin: 0 0 50px 0 !important;
     }
 
+    .showcase li{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    section h1{
+        font-size: 32px;
+    }
 }
