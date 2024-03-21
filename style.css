@@ -652,5 +652,6 @@ form textarea {
         border: 2px solid var(--main-color);
         padding-top: 300px;
         margin-top: -300px;
+        
     }
 }
