@@ -640,18 +640,23 @@ form textarea {
         font-size: 32px;
     }
     .description img{
-        display: block;
+        display: inline-block;
         text-align: center;
         margin-top: -300px !important;
         z-index: -1;
         border-radius: 50%;
-        width: 100%;
+        width: 80%;
     }
     .border-style{
         border-radius: 50%;
-        border: 2px solid var(--main-color);
+        /* border: 2px solid var(--main-color); */
         padding-top: 300px;
         margin-top: -300px;
-        
+    }
+
+    .animate-charcter-main{
+        font-size: 24px !important;
     }
 }
+
+
